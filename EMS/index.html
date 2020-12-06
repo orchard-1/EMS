@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="register.php" method="POST">
+            fname<input type="text" maxlength="30" name="fname" required>
+            lname<input type="text" maxlength="30" name="lname" required>
+            mobile<input type="text" maxlength="10" name="mobile" required pattern="^[6-9][0-9]{9}">
+            DOB<input type="date" name="dob">
+            gender<input type="radio" name="gender" value="male" required>male
+            <input type="radio" name="gender" value="female" required>female
+            <input type="radio" name="gender" value="others" required>others
+            
+            <select name="city" label="city" value="" required>
+
+                <option></option>
+                <optgroup label="city"></optgroup>
+                <option value="hyd">hyd</option>
+                <option value="bang">bang</option>
+            </select>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
